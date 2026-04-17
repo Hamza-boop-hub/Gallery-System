@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Gallery System</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="mainContent">
+
+<h2>📁 Gallery System</h2>
+
+<div class="top-bar">
+  <button id="createFolderBtn">+ New Folder</button>
+  <button id="undoBtn">Undo Delete</button>
+  <input type="text" id="search" placeholder="Search folder...">
+</div>
+
+<div id="folders"></div>
+
+<div id="folderView">
+  <button class="backBtn">⬅ Back</button>
+  <h3 id="currentFolderTitle"></h3>
+
+  <input type="file" class="uploadInside">
+  <div class="images"></div>
+</div>
+
+</div>
+
+<!-- POPUP -->
+<div class="popup" id="folderPopup">
+  <h3>Create Folder</h3>
+  <input type="text" id="folderName" placeholder="Folder name">
+  <button id="saveFolder">Save</button>
+  <button id="cancelFolder">Cancel</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
